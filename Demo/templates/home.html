@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="home content">
+    <h1>Home</h1>
+    {% if user %}
+    <p>Welcome, {{user}}</p>
+    {% else %}
+    <p>Welcome!</p>
+    {% endif %}
+</div>
+{% endblock %}
