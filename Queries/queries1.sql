@@ -1,4 +1,4 @@
-USE CryptoNews
+USE CryptoNews;
 USE CryptoNews;
 use CryptoNews;
 show tables;
@@ -15,7 +15,7 @@ select DISTINCT content from cryptonews;
 select count(DISTINCT content) from cryptonews;
 select count(*) from cryptonews where content like '%bitcoin%'; 
 select count(*) from cryptonews where content like '%BITCOIN%';
-select * from cryptonews where content like any '%{select DISTINCT currency_name from Value}%';
+select * from cryptonews where content like any '%(select DISTINCT currency_name from Value)%';
 select * from cryptonews where content = any (select DISTINCT currency_name from Value);
 select DISTINCT currency_name from Value;
 describe Value;
@@ -69,6 +69,8 @@ select v.currency_name,count(c.content) as frequency from cryptonews c inner joi
 select v.currency_name,count(c.content) as frequency from cryptonews c inner join Value v on c.content like concat('%', v.currency_name, '%') and c.date like '%2018-02-19 00:%' group by v.currency_name order by frequency desc;
 select max(date(date)) from cryptonews;
 select c.date, v.currency_name, count(c.content) as frequency from cryptonews c inner join Value v on c.content like concat('% ', v.currency_name, ' %') and c.date like concat('%', (select max(date(date)) from cryptonews), '%') group by v.currency_name order by frequency desc;
-select c.date, v.currency_name, count(c.content) as frequency from cryptonews c inner join Value v on c.content like concat('% ', v.currency_name, ' %') and c.date like '%2018-03-14%' group by v.currency_name order by frequency desc;
+
+select distinct(v.currency_name) as curr, count(c.content) as frequency from cryptonews c right join Value v on c.content like concat('% ', (select distinct(currency_name) from Value as va where v.currency_name = va.currency_name), ' %') and c.date like concat('%', (select max(date(date)) from cryptonews), '%') order by frequency desc;
+
 select distinct(date(date)) from cryptonews;
 select count(*) from cryptonews where date like '%2018-03-14%';
