@@ -1,23 +1,13 @@
 from flask import Flask, request, render_template
 from dbConnect import getCurrencyNames
+from flask_bootstrap import Bootstrap
 
 app = Flask(__name__)
-
+Bootstrap(app)
 
 @app.route('/')
-@app.route('/<user>')
-def home(user=None):
-    return render_template("home.html", user=user)
-
-
-@app.route('/httpmethods/<mname>', methods=['GET', 'POST'])
-def httpmethods(mname):
-    return render_template("httpmethods.html", mname=request.method)
-
-
-@app.route('/about')
-def about():
-    return render_template("about.html")
+def home():
+    return render_template("home.html")
 
 
 @app.route('/currency/<c_name>')
@@ -27,17 +17,11 @@ def currencyDashboard(c_name):
 
 @app.route('/list')
 def listdisplay():
-    # currencies = ["Bitcoin","Ethereum","Ripple"]
     value_table = getCurrencyNames()
     currencies = []
     for row in value_table:
         currencies.append(row[0])
     return render_template("list.html", currencies=currencies)
-
-
-@app.route('/templateparam/<name>')
-def templateparam(name):
-    return render_template("params.html", name=name)
 
 
 if __name__ == "__main__":
