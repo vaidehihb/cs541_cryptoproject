@@ -69,6 +69,8 @@ select v.currency_name,count(c.content) as frequency from cryptonews c inner joi
 select v.currency_name,count(c.content) as frequency from cryptonews c inner join Value v on c.content like concat('%', v.currency_name, '%') and c.date like '%2018-02-19 00:%' group by v.currency_name order by frequency desc;
 select max(date(date)) from cryptonews;
 select c.date, v.currency_name, count(c.content) as frequency from cryptonews c inner join Value v on c.content like concat('% ', v.currency_name, ' %') and c.date like concat('%', (select max(date(date)) from cryptonews), '%') group by v.currency_name order by frequency desc;
-select c.date, v.currency_name, count(c.content) as frequency from cryptonews c inner join Value v on c.content like concat('% ', v.currency_name, ' %') and c.date like '%2018-03-14%' group by v.currency_name order by frequency desc;
+select distinct(v.currency_name), count(c.content) as frequency from cryptonews c left join Value v on c.content like concat('% ', (select distinct(currency_name) from Value as va where va.currency_name = v.currency_name), ' %') and c.date like '%2018-03-14%' group by v.currency_name order by frequency desc;
 select distinct(date(date)) from cryptonews;
-select count(*) from cryptonews where date like '%2018-03-14%';
+select count(*) from cryptonews where date like '%2018-02-19%';
+SELECT SUBSTRING_INDEX(SUBSTRING_INDEX(SUBSTRING_INDEX(SUBSTRING_INDEX(SUBSTRING_INDEX(link, '/', 3), '://', -1), '/', 1), '?', 1),'www.',-2) as domain, count(link) as freq from cryptonews where content like '%bitcoin%' group by domain order by freq desc;
+select date(time) as t, quote from Value where currency_name='Bitcoin' group by t order by t;
