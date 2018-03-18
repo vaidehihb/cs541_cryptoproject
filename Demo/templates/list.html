@@ -1,12 +1,10 @@
 {% extends "layout.html" %}
 {% block content %}
 <div class="list container">
-    <h1>List demo</h1>
-    <hr>
-    <ul>
-      {% for item in currencies %}
-        <li><a href="{{ url_for('currency_dashboard', c_name=item) }}">{{item}}</a>></li>
-      {% endfor %}
+    <ul class="list-group">
+        {% for item in currencies %}
+            <li class="list-group-item"><a href="{{ url_for('currency_dashboard', c_name=item) }}">{{item}}</a></li>
+        {% endfor %}
     </ul>
 </div>
 {% endblock %}
