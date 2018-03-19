@@ -15,16 +15,15 @@ def getWordsFreq():
         text = unicode(row[0], errors='ignore')
         tokens = word_tokenize(text)
         words.extend(tokens)
+    words = map(lambda x: x.lower(), words)
 
     # remove stopwords from our words list and also remove any word whose length is less than 3
     # stopwords are commonly occuring words like is, am, are, they, some, etc.
     stop_words = set(stopwords.words('english'))
-    words = [word for word in words if word not in stop_words and len(word) > 2]
+    words = [word for word in words if word not in stop_words and len(word) > 3]
 
     words_freq = Counter(words).most_common()
 
     words_json = [{'text': str(word[0]), 'weight': int(word[1])} for word in words_freq]
     # # json.dumps is used to convert json object i.e. dictionary or list into a string
     return json.dumps(words_json)
-
-
