@@ -1,6 +1,7 @@
 from flask import Flask, request, render_template
 from dbConnect import getCurrencyNames
 from flask_bootstrap import Bootstrap
+from wordsFrequency import getWordsFreq
 
 #crypto flask app
 app = Flask(__name__)
@@ -24,6 +25,16 @@ def listdisplay():
     for row in value_table:
         currencies.append(row[0])
     return render_template("list.html", currencies=currencies)
+
+# word cloud data
+@app.route('/word_cloud')
+def word_cloud():
+    try:
+        words_json = getWordsFreq()
+        return words_json
+    except:
+        return []
+
 
 
 if __name__ == "__main__":
