@@ -1,5 +1,5 @@
 from flask import Flask, request, render_template
-from dbConnect import getCurrencyNames
+from dbConnect import getCurrencyNames, getDomains
 from flask_bootstrap import Bootstrap
 from wordsFrequency import getWordsFreq
 
@@ -19,6 +19,12 @@ def index():
 def currency_dashboard(c_name):
     return render_template("c_dashboard.html", c_name=c_name)
 
+
+# currency domains
+@app.route('/currency/<c_name>/domains')
+def currency_domains(c_name):
+    domains = getDomains(c_name)
+    return render_template("c_domains.html", domains=domains[0:10], c_name=c_name)
 
 # currency list
 @app.route('/list')
