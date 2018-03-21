@@ -7,7 +7,11 @@ $(document).ready(function () {
        // we have to specify width and height of the word_cloud chart
        $('#word_cloud').jQCloud(words_data, {
            autoResize:true,
-           height:600
+           height:400,
+           afterCloudRender:function(){
+                alert(1);
+                window.location.replace("/list");
+           }
        });
    }});
 });
