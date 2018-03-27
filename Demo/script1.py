@@ -1,5 +1,5 @@
 from flask import Flask, request, render_template
-from dbConnect import getCurrencyNames, getDomains
+from dbConnect import getCurrencyNames, getDomains, readCurrencies
 from flask_bootstrap import Bootstrap
 from wordsFrequency import getWordsFreq
 
@@ -29,7 +29,7 @@ def currency_domains(c_name):
 # currency list
 @app.route('/list')
 def listdisplay():
-    value_table = getCurrencyNames()
+    value_table = readCurrencies()
     currencies = []
     for row in value_table:
         currencies.append(row[0])
