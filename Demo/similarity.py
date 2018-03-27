@@ -28,19 +28,17 @@ def getCurrencyPopularity(content):
     gen_docs = [[w.lower() for w in word_tokenize(text)] for text in content]
     dictionary = gensim.corpora.Dictionary(currencies)
     corpus = [dictionary.doc2bow(gen_doc) for gen_doc in gen_docs]
-    # print corpus
     total_currencies = [[index, 0] for index in range(len(currencies))]
     for article in corpus:
         for currency in article:
             index = currency[0]
             total_currencies[index][1] += 1
-    # print total_currencies
     popular_currencies = [currency for currency in total_currencies if currency[1] > 0]
     popular_currencies = sorted(popular_currencies, key=lambda x: x[1], reverse=True)
+    popularity_list = []
     for currency in popular_currencies:
-        print currencies[currency[0]], currency[1]
-    print "Total articles: ", len(content)
-    print "Total currencies: ", len(currencies)
+        popularity_list.append([currencies[currency[0]], currency[1]])
+    return popularity_list
 
 
 # content_list = ["I'm taking the show on the road crypto bitcoin.", "My socks are a force multiplier.",
@@ -48,18 +46,10 @@ def getCurrencyPopularity(content):
 #                 "Legend has it that the mind is a mad monkey.", "I make my own fun."]
 # query = "Socks are a force for good."
 
-start = time.time()
 content = getContent()
 content_list = [unicode(article[0], errors='ignore') for article in content]
-end = time.time()
-print "\nTime to get content: ", end - start, "\n"
-
-query = content_list[0]
-
-start = time.time()
 getCurrencyPopularity(content_list)
-end = time.time()
-print "\nTime to get popular currencies: ", end - start
+# query = content_list[0]
 
 # dictionary, tf_idf, sims = createSims(content_list)
 # getSimilarity(query, dictionary, tf_idf, sims)
