@@ -31,3 +31,10 @@ footer {
 footer p {
     margin: 17px 0;
 }
+
+#popular {
+	height: 500px;
+	min-width: 310px;
+	max-width: 800px;
+	margin: 0 auto;
+}

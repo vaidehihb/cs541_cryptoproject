@@ -21,7 +21,9 @@ def getSimilarity(query_content, dictionary, tf_idf, sims):
     print sims[query_doc_tf_idf]
 
 
-def getCurrencyPopularity(content):
+def getCurrencyPopularity():
+    content_raw = getContent()
+    content = [unicode(article[0], errors='ignore') for article in content_raw]
     currencies = readCurrencies()
     for c in currencies:
         c[0] = c[0].lower()
@@ -38,18 +40,5 @@ def getCurrencyPopularity(content):
     popularity_list = []
     for currency in popular_currencies:
         popularity_list.append([currencies[currency[0]], currency[1]])
-    return popularity_list
+    return popularity_list[:10]
 
-
-# content_list = ["I'm taking the show on the road crypto bitcoin.", "My socks are a force multiplier.",
-#                 "I am the barber who cuts everyone's hair who doesn't cut their own.",
-#                 "Legend has it that the mind is a mad monkey.", "I make my own fun."]
-# query = "Socks are a force for good."
-
-content = getContent()
-content_list = [unicode(article[0], errors='ignore') for article in content]
-getCurrencyPopularity(content_list)
-# query = content_list[0]
-
-# dictionary, tf_idf, sims = createSims(content_list)
-# getSimilarity(query, dictionary, tf_idf, sims)

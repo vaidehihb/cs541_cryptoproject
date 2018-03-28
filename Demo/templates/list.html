@@ -1,12 +1,16 @@
 {% extends "layout.html" %}
 {% block content %}
 <div class="list container">
-    <ul class="list-group">
-        {% for item in currencies %}
-            <li class="list-group-item"><a href="{{ url_for('currency_dashboard', c_name=item) }}">{{item}}</a></li>
-        {% endfor %}
-    </ul>
+    <!--<ul class="list-group">-->
+        <!--{% for item in currencies %}-->
+            <!--<li class="list-group-item"><a href="{{ url_for('currency_dashboard', c_name=item) }}">{{item}}</a></li>-->
+        <!--{% endfor %}-->
+    <!--</ul>-->
+  <div class="popularity">
+      <div id="popular" style="height: 400px"></div>
+  </div>
 </div>
+
 
 {% block footer%}
 <footer>
@@ -15,4 +19,11 @@
     </div>
 </footer>
 {%endblock%}
+{% endblock %}
+{% block scripts %}
+{{super()}}
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-3d.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="{{url_for('static', filename='js/charts.js')}}"></script>
 {% endblock %}
