@@ -1,0 +1,19 @@
+****currency rating:
+- popularity
+- fluctuation in quotes
+- increasing popularity
+- how old and how much has being covered since then?
+
+related currencies:
+
+reactive or ____:
+
+**summary:
+
+** TRY TO BUILD SOMETHING REALTIME
+
+most talked about currency in last 5 days/ 10 days etc.
+
+user ratings input
+
+currency correlation
