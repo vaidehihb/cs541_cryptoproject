@@ -1,6 +1,7 @@
 import gensim
 from dbConnect import getContent, getCurrencyNames, readCurrencies
 from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
 import time
 
 
@@ -21,7 +22,7 @@ def getSimilarity(query_content, dictionary, tf_idf, sims):
     print sims[query_doc_tf_idf]
 
 
-def getCurrencyPopularity():
+def getCurrencyPopularity(cloud=False,count=None):
     content_raw = getContent()
     content = [unicode(article[0], errors='ignore') for article in content_raw]
     currencies = readCurrencies()
@@ -31,14 +32,38 @@ def getCurrencyPopularity():
     dictionary = gensim.corpora.Dictionary(currencies)
     corpus = [dictionary.doc2bow(gen_doc) for gen_doc in gen_docs]
     total_currencies = [[index, 0] for index in range(len(currencies))]
+    stop_words = set(stopwords.words('english'))
+    # common = ['can', 'people']
+    # common1 = map(lambda x: unicode(x, errors='ignore'), common)
+    if not cloud:
+        stop_words.add(unicode('can', errors='ignore'))
+        stop_words.add(unicode('people', errors='ignore'))
+        stop_words.add(unicode('crypto', errors='ignore'))
+        stop_words.add(unicode('change', errors='ignore'))
+        stop_words.add(unicode('data', errors='ignore'))
+        stop_words.add(unicode('social', errors='ignore'))
+        stop_words.add(unicode('tokens', errors='ignore'))
+        stop_words.add(unicode('read', errors='ignore'))
+        stop_words.add(unicode('real', errors='ignore'))
+        stop_words.add(unicode('money', errors='ignore'))
+        stop_words.add(unicode('version', errors='ignore'))
+        stop_words.add(unicode('force', errors='ignore'))
+        stop_words.add(unicode('verify', errors='ignore'))
+        stop_words.add(unicode('purpose', errors='ignore'))
+
     for article in corpus:
         for currency in article:
             index = currency[0]
             total_currencies[index][1] += 1
-    popular_currencies = [currency for currency in total_currencies if currency[1] > 0]
+
+    popular_currencies = [currency for currency in total_currencies if currency[1] > 0 and str(currencies[currency[0]][0]).lower() not in stop_words]
     popular_currencies = sorted(popular_currencies, key=lambda x: x[1], reverse=True)
     popularity_list = []
     for currency in popular_currencies:
         popularity_list.append([currencies[currency[0]], currency[1]])
-    return popularity_list[:10]
+    if count:
+        return popularity_list[:count]
+    else:
+        return popularity_list
 
+# getCurrencyPopularity(5)
