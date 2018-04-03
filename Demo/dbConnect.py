@@ -26,29 +26,10 @@ def getContent():
     db = MySQLdb.connect(host="cs336.ckksjtjg2jto.us-east-2.rds.amazonaws.com", port=3306,
                          user="student", passwd="cs336student", db="CryptoNews")
     cursor = db.cursor()
-    cursor.execute("select distinct(content) from cryptonews where date like '%2018-03-13%';")
+    cursor.execute("select distinct(content) from cryptonews where date like '%2018-03-12%';")
     content = cursor.fetchall()
     db.close()
     return content
-
-
-def getPopularity():
-    db = MySQLdb.connect(host="cs336.ckksjtjg2jto.us-east-2.rds.amazonaws.com", port=3306,
-                         user="student", passwd="cs336student", db="CryptoNews")
-    cursor = db.cursor()
-    cursor.execute("select distinct(currency_name) from Value")
-    currencies = cursor.fetchall()
-    list = []
-    for currency in currencies:
-        currency = currency[0]
-        print currency
-        sql = "select count(distinct(content)) from cryptonews where date like '%2018-03-13%' and content like"
-        cursor.execute(sql + " '%%%s%%'" % (currency))
-        count = cursor.fetchall()
-        list.append([currency, count])
-    print list
-    db.close()
-
 
 def readCurrencies():
     currencies = []
@@ -71,9 +52,4 @@ def getDomains(c_name):
     db.close()
     return domains
 
-# getPopularity()
-
-# currencies = getCurrencyNames()
-# print currencies[0:5]
-# currencies = readCurrencies()
-# print currencies[0:5]
+readCurrencies()
