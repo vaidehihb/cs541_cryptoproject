@@ -48,7 +48,7 @@ def listdisplay():
 # popular currencies
 @app.route('/getpopular')
 def popularCurrencies():
-    popular = getCurrencyPopularity(count=10)
+    popular = getCurrencyPopularity()
     currencies = [str(pair[0][0]).capitalize() for pair in popular]
     scores = [int(pair[1]) for pair in popular]
     pop_json = {'currencies': currencies, 'scores': scores}
@@ -58,9 +58,8 @@ def popularCurrencies():
 @app.route('/word_cloud')
 def word_cloud():
     try:
-        words_json = getCurrencyPopularity()
-        words_json = [{'text': str(word[0][0]).capitalize(), 'weight': int(word[1]), 'link': '/currency/' + str(word[0][0]).lower()} for word in words_json]
-        return json.dumps(words_json)
+        words_json = getWordsFreq()
+        return words_json
     except:
         return []
 

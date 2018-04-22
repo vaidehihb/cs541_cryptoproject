@@ -31,6 +31,7 @@ def getContent():
     db.close()
     return content
 
+
 def readCurrencies():
     currencies = []
     with open('list.csv', 'rb') as csv_file:
@@ -52,4 +53,15 @@ def getDomains(c_name):
     db.close()
     return domains
 
-readCurrencies()
+
+def getQuotes(currency):
+    db = MySQLdb.connect(host="cs336.ckksjtjg2jto.us-east-2.rds.amazonaws.com", port=3306,
+                         user="student", passwd="cs336student", db="CryptoNews")
+    cursor = db.cursor()
+    cursor.execute("select date(time) as t, quote from Value where currency_name=%s order by t;",
+                   (str(currency),))
+    quotes = cursor.fetchall()
+    db.close()
+    return quotes
+
+# readCurrencies()
