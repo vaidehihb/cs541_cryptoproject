@@ -33,9 +33,9 @@ def getSkew(quotes):
 
 a = CryptoCompareData()
 a.getCoinList()
-currency_list = a.coinlist
+currency_list = a.coinlist.head(n=100)
 currency_list = currency_list[['SortOrder', 'Name', 'CoinName', 'FullName', 'Id', 'Symbol', 'TotalCoinSupply']]
-currency_list = currency_list.head(n=10)
+# currency_list = currency_list.head(n=10)
 print currency_list
 # print data_by_days['close'].tolist()
 # a.getDataByHour()
