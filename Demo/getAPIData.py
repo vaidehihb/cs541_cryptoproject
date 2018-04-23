@@ -5,7 +5,7 @@ from pandas import *
 
 
 class CryptoCompareData(object):
-    def __init__(self, baseurl = 'https://min-api.cryptocompare.com/data/', params = {}):
+    def __init__(self, baseurl='https://min-api.cryptocompare.com/data/', params={}):
         self.baseurl = baseurl
         self.params = {'tsym': 'USD', 'toTS': time.time(), 'extraParams': 'CryptoSales'}
         self.coinlist = DataFrame()
@@ -16,7 +16,7 @@ class CryptoCompareData(object):
             response = req.json()
             return response
         except:
-            print "An unexpected error occured. Data could not be fetched."
+            print "An unexpected error occurred. Data could not be fetched."
 
     def getCoinList(self):
         try:
@@ -29,8 +29,7 @@ class CryptoCompareData(object):
             df.sort_values(by=['SortOrder'], ascending=[True])
             self.coinlist = df
         except:
-            print "An unexpected error occured. Data could not be fetched."
-
+            print "An unexpected error occurred. Data could not be fetched."
 
     def getDataByDays(self, days=30, aggregate=1, currency='BTC'):
         try:
@@ -48,8 +47,7 @@ class CryptoCompareData(object):
             df = DataFrame(response['Data'])
             return df
         except:
-            print "An unexpected error occured. Data could not be fetched."
-
+            print "An unexpected error occurred. Data could not be fetched."
 
     def getDataByHour(self, hours=24, aggregate=1, currency='BTC'):
         try:
@@ -67,11 +65,11 @@ class CryptoCompareData(object):
             df = DataFrame(response['Data'])
             return df
         except:
-            print "An unexpected error occured. Data could not be fetched."
+            print "An unexpected error occurred. Data could not be fetched."
 
 
 class CoinMarketCapData(object):
-    def __init__(self, baseurl = 'https://api.coinmarketcap.com/v1/'):
+    def __init__(self, baseurl='https://api.coinmarketcap.com/v1/'):
         self.baseurl = baseurl
         self.data = DataFrame()
         self.globaldata = DataFrame()
@@ -82,7 +80,7 @@ class CoinMarketCapData(object):
             response = req.json()
             return response
         except:
-            print "An unexpected error occured. Data could not be fetched."
+            print "An unexpected error occurred. Data could not be fetched."
 
     def getData(self):
         try:
@@ -90,8 +88,7 @@ class CoinMarketCapData(object):
             response = self.callAPI(url)
             self.data = DataFrame(response)
         except:
-            print "An unexpected error occured. Data could not be fetched."
-
+            print "An unexpected error occurred. Data could not be fetched."
 
     def getGlobalData(self):
         try:
@@ -99,7 +96,7 @@ class CoinMarketCapData(object):
             response = self.callAPI(url)
             self.globaldata = DataFrame(response, index=[0])
         except:
-            print "An unexpected error occured. Data could not be fetched."
+            print "An unexpected error occurred. Data could not be fetched."
 
     def getDataForCurrency(self, id=None):
         try:
@@ -107,7 +104,7 @@ class CoinMarketCapData(object):
                 df = self.data.loc[(self.data['id'] == id) | (self.data['symbol'] == id)]
                 return df
         except:
-            print "An unexpected error occured. Data could not be fetched."
+            print "An unexpected error occurred. Data could not be fetched."
 
 # if __name__ == '__main__':
 #     a = CryptoCompareData()
