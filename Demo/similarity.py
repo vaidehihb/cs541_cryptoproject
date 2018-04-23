@@ -6,6 +6,20 @@ import csv
 import time
 
 
+def getStopWords():
+    stop_words = stopwords.words('english')
+    common = []
+    # common = ['aware', 'voice', 'spots', 'hedge', 'cube', 'tokens', 'token', 'roofs', 'warp', 'castle', 'syndicate',
+    #           'zilla', 'can', 'money', 'people', 'burst', 'change', 'cloud', 'coin2', 'cream', 'crown', 'crypto',
+    #           'cypher', 'data', 'datum', 'diamond', 'elastic', 'emrald', 'flash', 'flip', 'force', 'franks', 'fusion',
+    #           'game', 'gambit', 'gas', 'gems', 'guess', 'guts', 'goldcoin', 'heat', 'horizon', 'hush', 'hyper', 'icon',
+    #           'ink', 'ins', 'interstellar', 'ion', 'iota', 'jewels', 'kin', 'life', 'maker', 'metal', 'myriad', 'nano',
+    #           'neo', 'neuro', 'network', 'node', 'nexus', 'particle', 'passive', 'photon', 'pillar', 'poet', 'read',
+    #           'real', 'version','verify','purpose','consensus','hedge']
+    stop_words.extend(common)
+    return set(stop_words)
+
+
 def createSims(content):
     gen_docs = [[w.lower() for w in word_tokenize(text)] for text in content]
     dictionary = gensim.corpora.Dictionary(gen_docs)
@@ -24,7 +38,9 @@ def getSimilarity(query_content, dictionary, tf_idf, sims):
 
 
 def getCurrencyPopularity(cloud=False, count=None):
+    print "getting content..."
     content_raw = getContent()
+    print "getting popularity..."
     content = [unicode(article[0], errors='ignore') for article in content_raw]
     currencies = readCurrencies()
     for c in currencies:
@@ -33,24 +49,8 @@ def getCurrencyPopularity(cloud=False, count=None):
     dictionary = gensim.corpora.Dictionary(currencies)
     corpus = [dictionary.doc2bow(gen_doc) for gen_doc in gen_docs]
     total_currencies = [[index, 0] for index in range(len(currencies))]
-    stop_words = set(stopwords.words('english'))
-    # common = ['can', 'people']
-    # common1 = map(lambda x: unicode(x, errors='ignore'), common)
-    if not cloud:
-        stop_words.add(unicode('can', errors='ignore'))
-        stop_words.add(unicode('people', errors='ignore'))
-        stop_words.add(unicode('crypto', errors='ignore'))
-        stop_words.add(unicode('change', errors='ignore'))
-        stop_words.add(unicode('data', errors='ignore'))
-        stop_words.add(unicode('social', errors='ignore'))
-        stop_words.add(unicode('tokens', errors='ignore'))
-        stop_words.add(unicode('read', errors='ignore'))
-        stop_words.add(unicode('real', errors='ignore'))
-        stop_words.add(unicode('money', errors='ignore'))
-        stop_words.add(unicode('version', errors='ignore'))
-        stop_words.add(unicode('force', errors='ignore'))
-        stop_words.add(unicode('verify', errors='ignore'))
-        stop_words.add(unicode('purpose', errors='ignore'))
+
+    stop_words = getStopWords()
 
     for article in corpus:
         for currency in article:
@@ -80,3 +80,4 @@ def readPopularity():
         for row in reader:
             popularity_list.append(row)
     return popularity_list
+#

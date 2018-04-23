@@ -2,6 +2,7 @@
 
 import MySQLdb
 import csv
+from datetime import date, timedelta
 
 
 def getCurrencyNames():
@@ -23,10 +24,12 @@ def getCurrencyNames():
 
 
 def getContent():
+    yesterday = date.today() - timedelta(1)
+    yesterday_date = yesterday.strftime('%Y-%m-%d')
     db = MySQLdb.connect(host="cs336.ckksjtjg2jto.us-east-2.rds.amazonaws.com", port=3306,
                          user="student", passwd="cs336student", db="CryptoNews")
     cursor = db.cursor()
-    cursor.execute("select distinct(content) from cryptonews where date like '%2018-03-12%';")
+    cursor.execute("select distinct(content) from cryptonews where date like %s;", ("%" + yesterday_date + "%",))
     content = cursor.fetchall()
     db.close()
     return content
