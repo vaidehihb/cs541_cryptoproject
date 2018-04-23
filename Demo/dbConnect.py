@@ -15,7 +15,7 @@ def getCurrencyNames():
     currencies = cursor.fetchall()
     # disconnect from server
     db.close()
-    with open('list.csv', 'wb') as csv_file:
+    with open('Demo/csvFiles/list.csv', 'wb') as csv_file:
         writer = csv.writer(csv_file)
         for c in currencies:
             writer.writerow(c)
@@ -34,7 +34,7 @@ def getContent():
 
 def readCurrencies():
     currencies = []
-    with open('list.csv', 'rb') as csv_file:
+    with open('Demo/csvFiles/list.csv', 'rb') as csv_file:
         reader = csv.reader(csv_file)
         for row in reader:
             currencies.append(row)
@@ -63,5 +63,3 @@ def getQuotes(currency):
     quotes = cursor.fetchall()
     db.close()
     return quotes
-
-# readCurrencies()
