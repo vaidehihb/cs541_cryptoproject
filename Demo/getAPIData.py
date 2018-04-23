@@ -137,13 +137,13 @@ class CoinMarketCapData(object):
             print "An unexpected error occurred. Data could not be fetched."
 
 
-if __name__ == '__main__':
-    a = CryptoCompareData()
-    a.getCoinList()
-    # a.getDataByDays()
-    # a.getDataByHour()
-    # a.getSocialStats()
-    a.getAverageData()
+# if __name__ == '__main__':
+#     a = CryptoCompareData()
+#     a.getCoinList()
+#     a.getDataByDays()
+#     a.getDataByHour()
+#     a.getSocialStats()
+#     a.getAverageData()
 #
 #     b = CoinMarketCapData()
 #     b.getGlobalData()
