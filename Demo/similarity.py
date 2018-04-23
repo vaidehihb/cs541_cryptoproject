@@ -2,6 +2,7 @@ import gensim
 from dbConnect import getContent, getCurrencyNames, readCurrencies
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
+import csv
 import time
 
 
@@ -22,7 +23,7 @@ def getSimilarity(query_content, dictionary, tf_idf, sims):
     print sims[query_doc_tf_idf]
 
 
-def getCurrencyPopularity(cloud=False,count=None):
+def getCurrencyPopularity(cloud=False, count=None):
     content_raw = getContent()
     content = [unicode(article[0], errors='ignore') for article in content_raw]
     currencies = readCurrencies()
@@ -56,14 +57,26 @@ def getCurrencyPopularity(cloud=False,count=None):
             index = currency[0]
             total_currencies[index][1] += 1
 
-    popular_currencies = [currency for currency in total_currencies if currency[1] > 0 and str(currencies[currency[0]][0]).lower() not in stop_words]
+    popular_currencies = [currency for currency in total_currencies if
+                          currency[1] > 0 and str(currencies[currency[0]][0]).lower() not in stop_words]
     popular_currencies = sorted(popular_currencies, key=lambda x: x[1], reverse=True)
     popularity_list = []
     for currency in popular_currencies:
         popularity_list.append([currencies[currency[0]], currency[1]])
+    with open('Demo/csvFiles/popularity_list.csv', 'wb') as csv_file:
+        writer = csv.writer(csv_file)
+        for p in popularity_list:
+            writer.writerow([p[0][0], p[1]])
     if count:
         return popularity_list[:count]
     else:
         return popularity_list
 
-# getCurrencyPopularity(5)
+
+def readPopularity():
+    popularity_list = []
+    with open('Demo/csvFiles/popularity_list.csv', 'rb') as csv_file:
+        reader = csv.reader(csv_file)
+        for row in reader:
+            popularity_list.append(row)
+    return popularity_list
