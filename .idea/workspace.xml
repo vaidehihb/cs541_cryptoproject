@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="c10718fb-53a1-4973-a03d-459573ba4f70" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/Demo/calldbConnnect.py" afterPath="" />
       <change beforePath="$PROJECT_DIR$/Demo/csvFiles/list.csv" afterPath="$PROJECT_DIR$/Demo/csvFiles/list.csv" />
@@ -9,6 +10,10 @@
       <change beforePath="$PROJECT_DIR$/Demo/ratings.py" afterPath="$PROJECT_DIR$/Demo/ratings.py" />
       <change beforePath="$PROJECT_DIR$/Demo/similarity.py" afterPath="$PROJECT_DIR$/Demo/similarity.py" />
       <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+=======
+    <list default="true" id="6200061d-781f-4531-ac61-1aa52a431022" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/Demo/getAPIData.py" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/getAPIData.py" afterDir="false" />
+>>>>>>> 080c38e1941ab44fdf13099e80fe2edcb38d56b4
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,6 +23,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="ratings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Demo/ratings.py">
@@ -68,11 +74,22 @@
                 <element signature="e#2840#3065#0" expanded="false" />
                 <element signature="e#3104#3346#0" expanded="false" />
                 <element signature="e#3399#3631#0" expanded="false" />
+=======
+    <leaf>
+      <file leaf-file-name="getAPIData.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Demo/getAPIData.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="97" column="12" selection-start-line="97" selection-start-column="12" selection-end-line="97" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+>>>>>>> 080c38e1941ab44fdf13099e80fe2edcb38d56b4
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
@@ -95,12 +112,17 @@
       <find>lock</find>
     </findStrings>
   </component>
+=======
+    </leaf>
+  </component>
+>>>>>>> 080c38e1941ab44fdf13099e80fe2edcb38d56b4
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/Demo/dbConnect.py" />
         <option value="$PROJECT_DIR$/Demo/similarity.py" />
         <option value="$PROJECT_DIR$/Demo/calldbConnnect.py" />
@@ -131,10 +153,28 @@
     </navigator>
     <panes>
       <pane id="Course" />
+=======
+        <option value="$PROJECT_DIR$/Demo/getAPIData.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1190" />
+    <option name="y" value="15" />
+    <option name="width" value="415" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+>>>>>>> 080c38e1941ab44fdf13099e80fe2edcb38d56b4
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
+<<<<<<< HEAD
               <item name="cs541_cryptoproject" type="b2602c69:ProjectViewProjectNode" />
               <item name="cs541_cryptoproject" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -148,12 +188,25 @@
               <item name="cs541_cryptoproject" type="462c0819:PsiDirectoryNode" />
               <item name="Demo" type="462c0819:PsiDirectoryNode" />
               <item name="csvFiles" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="master" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="master" type="462c0819:PsiDirectoryNode" />
+              <item name="Demo" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 080c38e1941ab44fdf13099e80fe2edcb38d56b4
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
       <pane id="Scratches" />
+=======
+      <pane id="Scope" />
+>>>>>>> 080c38e1941ab44fdf13099e80fe2edcb38d56b4
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -171,6 +224,7 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
@@ -195,11 +249,50 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+=======
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6200061d-781f-4531-ac61-1aa52a431022" name="Default" comment="" />
+      <created>1524506653172</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1524506653172</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="R Packages" />
+      <window_info anchor="right" id="R Graphics" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.4747191" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+>>>>>>> 080c38e1941ab44fdf13099e80fe2edcb38d56b4
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+<<<<<<< HEAD
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -318,6 +411,15 @@
           <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <element signature="e#34#57#0" expanded="true" />
+=======
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Demo/getAPIData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="97" column="12" selection-start-line="97" selection-start-column="12" selection-end-line="97" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+>>>>>>> 080c38e1941ab44fdf13099e80fe2edcb38d56b4
           </folding>
         </state>
       </provider>

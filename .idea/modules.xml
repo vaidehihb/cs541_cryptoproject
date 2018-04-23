@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/cs541_cryptoproject.iml" filepath="$PROJECT_DIR$/.idea/cs541_cryptoproject.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/master.iml" filepath="$PROJECT_DIR$/.idea/master.iml" />
+>>>>>>> 080c38e1941ab44fdf13099e80fe2edcb38d56b4
     </modules>
   </component>
 </project>
