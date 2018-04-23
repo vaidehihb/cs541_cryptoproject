@@ -1,9 +1,8 @@
 import gensim
-from dbConnect import getContent, getCurrencyNames, readCurrencies
+from dbConnect import getContent, readCurrencies
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 import csv
-import time
 
 
 def getStopWords():
@@ -41,6 +40,7 @@ def getCurrencyPopularity(cloud=False, count=None):
     print "getting content..."
     content_raw = getContent()
     print "getting popularity..."
+    print content_raw[0]
     content = [unicode(article[0], errors='ignore') for article in content_raw]
     currencies = readCurrencies()
     for c in currencies:
@@ -80,3 +80,4 @@ def readPopularity():
         for row in reader:
             popularity_list.append(row)
     return popularity_list
+
