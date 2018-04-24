@@ -80,4 +80,3 @@ def readPopularity():
         for row in reader:
             popularity_list.append(row)
     return popularity_list
-
