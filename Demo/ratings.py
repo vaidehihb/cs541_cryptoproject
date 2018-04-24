@@ -1,9 +1,8 @@
-# from dbConnect import getQuotes
 from scipy import stats
 import numpy as np
 from scipy.stats import kurtosis, skew
-# from similarity import getCurrencyPopularity
 from getAPIData import CryptoCompareData, CoinMarketCapData
+from similarity import readPopularity
 
 
 def getSlope(volume):
@@ -33,7 +32,7 @@ def getSkew(quotes):
 
 a = CryptoCompareData()
 a.getCoinList()
-currency_list = a.coinlist.head(n=100)
+currency_list = a.coinlist.head(n=10)
 currency_list = currency_list[['SortOrder', 'Name', 'CoinName', 'FullName', 'Id', 'Symbol', 'TotalCoinSupply']]
 # currency_list = currency_list.head(n=10)
 print currency_list

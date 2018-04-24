@@ -71,7 +71,8 @@ class CryptoCompareData(object):
     def getSocialStats(self, currency='bitcoin'):
         try:
             url = 'https://www.cryptocompare.com/api/data/socialstats/?id='
-            df = self.coinlist.loc[(self.coinlist['Name'] == currency) | (self.coinlist['Symbol'] == currency) | (self.coinlist['CoinName'].str.lower() == currency)]
+            df = self.coinlist.loc[(self.coinlist['Name'] == currency) | (self.coinlist['Symbol'] == currency) | (
+                    self.coinlist['CoinName'].str.lower() == currency)]
             id = list(df['Id'])[0]
             url = url + str(id)
             response = self.callAPI(url)
@@ -127,7 +128,7 @@ class CoinMarketCapData(object):
         except:
             print "An unexpected error occurred. Data could not be fetched."
 
-    #Pass coin name
+    # Pass coin name
     def getDataForCurrency(self, id=None):
         try:
             if id:
@@ -135,7 +136,6 @@ class CoinMarketCapData(object):
                 return df
         except:
             print "An unexpected error occurred. Data could not be fetched."
-
 
 # if __name__ == '__main__':
 #     a = CryptoCompareData()
