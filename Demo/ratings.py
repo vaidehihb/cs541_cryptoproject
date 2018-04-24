@@ -1,8 +1,9 @@
-from dbConnect import getQuotes
+# from dbConnect import getQuotes
 from scipy import stats
 import numpy as np
 from scipy.stats import kurtosis, skew
-from similarity import getCurrencyPopularity
+# from similarity import getCurrencyPopularity
+from getAPIData import CryptoCompareData, CoinMarketCapData
 
 
 def getSlope(volume):
@@ -25,12 +26,16 @@ def getSkew(quotes):
     return skew(quotes)
 
 
-def getRating():
-    popularity = getCurrencyPopularity()
-    print popularity[0:20]
+# def getRating(currencies_list):
+#     popularity = getCurrencyPopularity()
+#     print popularity[0:20]
 
 
-getRating()
-
-# s, i = getSlope('Bitcoin')
-# print s, i
+a = CryptoCompareData()
+a.getCoinList()
+currency_list = a.coinlist.head(n=100)
+currency_list = currency_list[['SortOrder', 'Name', 'CoinName', 'FullName', 'Id', 'Symbol', 'TotalCoinSupply']]
+# currency_list = currency_list.head(n=10)
+print currency_list
+# print data_by_days['close'].tolist()
+# a.getDataByHour()

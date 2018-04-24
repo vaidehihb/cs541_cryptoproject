@@ -24,3 +24,4 @@
 ****future scope:
 - lists in decreasing order
 - user ratings input
+- fluctuation depending on daily average, high and low prices
