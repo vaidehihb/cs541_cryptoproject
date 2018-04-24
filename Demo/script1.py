@@ -13,10 +13,12 @@ Bootstrap(app)
 class SearchForm(Form):
     autocomp = TextField('Enter Currency name', id='currency_autocomplete')
 
+
 # home page
 @app.route('/')
 def index():
     return render_template("home.html")
+
 
 # currency details
 @app.route('/currency/<c_name>')
@@ -29,6 +31,7 @@ def currency_dashboard(c_name):
 def currency_domains(c_name):
     domains = getDomains(c_name)
     return render_template("c_domains.html", domains=domains[0:10], c_name=c_name)
+
 
 # word cloud data
 @app.route('/word_cloud')
