@@ -10,7 +10,7 @@ $(document).ready(function () {
            autoResize:true,
            height:600,
            afterCloudRender:function(){
-                window.location.replace("/currencylist");
+                window.location.replace("/currency/bitcoin");
            }
        });
    }});
