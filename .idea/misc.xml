@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-<<<<<<< HEAD
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 2.7 virtualenv at E:\DB Project\cs541_cryptoproject\virtual" project-jdk-type="Python SDK" />
-=======
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 2.7 virtualenv at C:\MS CS\Spring 2018\541\Project\Final project\master\virtual" project-jdk-type="Python SDK" />
->>>>>>> 080c38e1941ab44fdf13099e80fe2edcb38d56b4
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 2.7 virtualenv at C:\MS CS\Spring 2018\541\Project\Final project\master\virtual (1)" project-jdk-type="Python SDK" />
+  <component name="PyCharmProfessionalAdvertiser">
+    <option name="shown" value="true" />
+  </component>
 </project>
