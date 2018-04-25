@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="c10718fb-53a1-4973-a03d-459573ba4f70" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Demo/calldbConnnect.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Demo/csvFiles/list.csv" afterPath="$PROJECT_DIR$/Demo/csvFiles/list.csv" />
-      <change beforePath="$PROJECT_DIR$/Demo/csvFiles/popularity_list.csv" afterPath="$PROJECT_DIR$/Demo/csvFiles/popularity_list.csv" />
-      <change beforePath="$PROJECT_DIR$/Demo/dbConnect.py" afterPath="$PROJECT_DIR$/Demo/dbConnect.py" />
-      <change beforePath="$PROJECT_DIR$/Demo/ratings.py" afterPath="$PROJECT_DIR$/Demo/ratings.py" />
-      <change beforePath="$PROJECT_DIR$/Demo/similarity.py" afterPath="$PROJECT_DIR$/Demo/similarity.py" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-=======
-    <list default="true" id="6200061d-781f-4531-ac61-1aa52a431022" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Demo/getAPIData.py" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/getAPIData.py" afterDir="false" />
->>>>>>> 080c38e1941ab44fdf13099e80fe2edcb38d56b4
+    <list default="true" id="e223dec3-d4aa-4f49-9c52-65ad8332a2e9" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/Demo/script1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/script1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Demo/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Demo/static/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/static/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Demo/templates/c_dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/templates/c_dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Demo/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Demo/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/templates/layout.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,36 +17,24 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-<<<<<<< HEAD
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="ratings.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Demo/ratings.py">
+    <leaf>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Demo/static/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="544">
+              <caret line="65" column="17" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="script1.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Demo/script1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
               <folding>
-                <element signature="e#34#57#0" expanded="true" />
+                <element signature="e#0#59#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dbConnect.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Demo/dbConnect.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="similarity.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Demo/similarity.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="83" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -60,101 +42,75 @@
       <file leaf-file-name="getAPIData.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Demo/getAPIData.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="109" column="29" lean-forward="true" selection-start-line="109" selection-start-column="29" selection-end-line="109" selection-end-column="29" />
+            <state relative-caret-position="3000">
+              <caret line="150" column="42" lean-forward="true" selection-start-line="150" selection-start-column="42" selection-end-line="150" selection-end-column="42" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
-                <element signature="e#190#337#0" expanded="false" />
-                <element signature="e#375#570#0" expanded="false" />
-                <element signature="e#607#1054#0" expanded="false" />
-                <element signature="e#1131#1710#0" expanded="false" />
-                <element signature="e#1788#2369#0" expanded="false" />
-                <element signature="e#2482#2574#0" expanded="false" />
-                <element signature="e#2612#2807#0" expanded="false" />
-                <element signature="e#2840#3065#0" expanded="false" />
-                <element signature="e#3104#3346#0" expanded="false" />
-                <element signature="e#3399#3631#0" expanded="false" />
-=======
-    <leaf>
-      <file leaf-file-name="getAPIData.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Demo/getAPIData.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="97" column="12" selection-start-line="97" selection-start-column="12" selection-end-line="97" selection-end-column="12" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
->>>>>>> 080c38e1941ab44fdf13099e80fe2edcb38d56b4
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="702">
-                <caret line="26" column="32" lean-forward="false" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
-                <folding />
-              </first_editor>
-              <second_editor>
-                <markdownNavigatorState />
-              </second_editor>
+      <file leaf-file-name="c_dashboard.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Demo/templates/c_dashboard.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="36" column="65" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="65" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="charts.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Demo/static/js/charts.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="439">
+              <caret line="340" lean-forward="true" selection-start-line="340" selection-end-line="340" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Demo/static/js/script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>lock</find>
-    </findStrings>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
-=======
-    </leaf>
-  </component>
->>>>>>> 080c38e1941ab44fdf13099e80fe2edcb38d56b4
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/Demo/dbConnect.py" />
-        <option value="$PROJECT_DIR$/Demo/similarity.py" />
-        <option value="$PROJECT_DIR$/Demo/calldbConnnect.py" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/Demo/ratings.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
-  </component>
-  <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Course" />
-=======
-        <option value="$PROJECT_DIR$/Demo/getAPIData.py" />
+        <option value="$PROJECT_DIR$/Demo/templates/currency_table.html" />
+        <option value="$PROJECT_DIR$/Demo/templates/home.html" />
+        <option value="$PROJECT_DIR$/Demo/templates/layout.html" />
+        <option value="$PROJECT_DIR$/Demo/static/js/script.js" />
+        <option value="$PROJECT_DIR$/getDataForFrontEnd.py" />
+        <option value="$PROJECT_DIR$/Demo/getDataForFrontEnd.py" />
+        <option value="$PROJECT_DIR$/Demo/static/css/main.css" />
+        <option value="$PROJECT_DIR$/Demo/templates/c_dashboard.html" />
+        <option value="$PROJECT_DIR$/Demo/static/js/charts.js" />
+        <option value="$PROJECT_DIR$/Demo/script1.py" />
       </list>
     </option>
   </component>
@@ -169,48 +125,70 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
->>>>>>> 080c38e1941ab44fdf13099e80fe2edcb38d56b4
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-<<<<<<< HEAD
-              <item name="cs541_cryptoproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cs541_cryptoproject" type="462c0819:PsiDirectoryNode" />
+              <item name="master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="master" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="cs541_cryptoproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cs541_cryptoproject" type="462c0819:PsiDirectoryNode" />
+              <item name="master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="master" type="462c0819:PsiDirectoryNode" />
               <item name="Demo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="cs541_cryptoproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cs541_cryptoproject" type="462c0819:PsiDirectoryNode" />
+              <item name="master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="master" type="462c0819:PsiDirectoryNode" />
               <item name="Demo" type="462c0819:PsiDirectoryNode" />
               <item name="csvFiles" type="462c0819:PsiDirectoryNode" />
-=======
-              <item name="master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="master" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="master" type="b2602c69:ProjectViewProjectNode" />
               <item name="master" type="462c0819:PsiDirectoryNode" />
               <item name="Demo" type="462c0819:PsiDirectoryNode" />
->>>>>>> 080c38e1941ab44fdf13099e80fe2edcb38d56b4
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="master" type="462c0819:PsiDirectoryNode" />
+              <item name="Demo" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="master" type="462c0819:PsiDirectoryNode" />
+              <item name="Demo" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="master" type="462c0819:PsiDirectoryNode" />
+              <item name="Demo" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-<<<<<<< HEAD
-      <pane id="Scratches" />
-=======
-      <pane id="Scope" />
->>>>>>> 080c38e1941ab44fdf13099e80fe2edcb38d56b4
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Demo/static/js" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\MS CS\Spring 2018\541\Project\Final project\master\Demo\static\js" />
+      <recent name="C:\MS CS\Spring 2018\541\Project\Final project\master\Demo" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\MS CS\Spring 2018\541\Project\Final project\master\Demo\static\img" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -224,42 +202,16 @@
       </list>
     </option>
   </component>
-<<<<<<< HEAD
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
-  </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24960339" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-=======
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6200061d-781f-4531-ac61-1aa52a431022" name="Default" comment="" />
-      <created>1524506653172</created>
+      <changelist id="e223dec3-d4aa-4f49-9c52-65ad8332a2e9" name="Default" comment="" />
+      <created>1524595405356</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1524506653172</updated>
+      <updated>1524595405356</updated>
     </task>
     <servers />
   </component>
@@ -270,156 +222,167 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="R Packages" />
-      <window_info anchor="right" id="R Graphics" />
+      <window_info anchor="right" id="R Graphics" weight="0.3295302" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.4747191" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.036516853" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
->>>>>>> 080c38e1941ab44fdf13099e80fe2edcb38d56b4
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Run" order="6" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24966443" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info anchor="right" id="R Graphics" order="0" />
+      <window_info anchor="right" id="R Packages" order="1" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="2" />
+      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info anchor="bottom" id="Python Console" order="3" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-<<<<<<< HEAD
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Demo/csvFiles/popularity_list.csv">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/html5/common.rnc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="229">
+          <caret line="124" column="18" selection-start-line="124" selection-start-column="18" selection-end-line="124" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python27/cs541_cryptoproject/Demo/calldbConnnect.py">
+    <entry file="file://$PROJECT_DIR$/virtual/Lib/site-packages/botocore/vendored/requests/packages/urllib3/packages/ordered_dict.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/cs541_cryptoproject/Demo/dbConnect.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="21" column="30" lean-forward="true" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Demo/csvFiles/popularity_list.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Demo/script1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1141">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#59#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Demo/calldbConnnect.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Demo/wordsFrequency.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#50#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Demo/getAPIData.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="109" column="29" lean-forward="true" selection-start-line="109" selection-start-column="29" selection-end-line="109" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <element signature="e#190#337#0" expanded="false" />
-            <element signature="e#375#570#0" expanded="false" />
-            <element signature="e#607#1054#0" expanded="false" />
-            <element signature="e#1131#1710#0" expanded="false" />
-            <element signature="e#1788#2369#0" expanded="false" />
-            <element signature="e#2482#2574#0" expanded="false" />
-            <element signature="e#2612#2807#0" expanded="false" />
-            <element signature="e#2840#3065#0" expanded="false" />
-            <element signature="e#3104#3346#0" expanded="false" />
-            <element signature="e#3399#3631#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="702">
-            <caret line="26" column="32" lean-forward="false" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Demo/similarity.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="83" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Demo/dbConnect.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Demo/ratings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state>
           <folding>
-            <element signature="e#34#57#0" expanded="true" />
-=======
-  <component name="editorHistoryManager">
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo/static/js/main.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo/templates/currency_table.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo/csvFiles/currency_data.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo/templates/c_domains.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo/templates/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-284">
+          <caret line="24" column="57" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo/getDataForFrontEnd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo/static/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="65" column="17" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo/static/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Demo/getAPIData.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="97" column="12" selection-start-line="97" selection-start-column="12" selection-end-line="97" selection-end-column="12" />
+        <state relative-caret-position="3000">
+          <caret line="150" column="42" lean-forward="true" selection-start-line="150" selection-start-column="42" selection-end-line="150" selection-end-column="42" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
->>>>>>> 080c38e1941ab44fdf13099e80fe2edcb38d56b4
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo/templates/c_dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="36" column="65" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="65" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo/static/js/charts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="340" lean-forward="true" selection-start-line="340" selection-end-line="340" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo/script1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
