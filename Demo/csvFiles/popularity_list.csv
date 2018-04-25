@@ -1,378 +1,286 @@
-bitcoin,2111
-ethereum,2066
-bitlux,2016
-bitluckcoin,1857
-buzzcoin,1665
-virtacoin,1289
-supplyshock,359
-xiaomicoin,285
-16bitcoin,258
-the hempcoin,250
-bipcoin,182
-bonescoin,155
-axiom coin,77
-mollycoin,63
-analcoin,61
-trigger,60
-litecoin,55
-katzcoin,54
-gbr coin,54
-aegis,51
-gemz social,51
-digix dao,50
-digicube,48
-diamond,46
-hedgecoin,40
-wings dao,35
-ripple,33
-emerald,33
-ssvcoin,33
-darkknightcoin,33
-genstake,32
-scryptcoin,28
-newzealandcoin,27
-verge,26
-tittiecoin,25
-quotient,24
-rise,24
-bitquark,20
-tekcoin,19
-lgbtqoin,19
-coolcoin,18
-syndicate,18
-zcash,17
-safecoin,15
-bam,15
-spaincoin,14
-aircoin,13
-monero,12
-nxt,12
-xaucoin,12
-spacecoin,12
-safeexchangecoin,11
-bitshares,9
-megastake,9
-olympcoin,9
-returnbit,8
-ark,8
-chip,7
-hodlcoin,7
-lisk,7
+Currency,Popularity
+bitlux,3231
+bitluckcoin,2008
+bitcoin,1417
+ethereum,1286
+buzzcoin,969
+virtacoin,857
+bonescoin,432
+supplyshock,302
+the hempcoin,252
+xiaomicoin,247
+16bitcoin,209
+axiom coin,161
+mollycoin,154
+digicube,136
+analcoin,111
+bipcoin,107
+gemz social,90
+ripple,58
+trigger,55
+diamond,53
+ssvcoin,51
+katzcoin,48
+litecoin,45
+newzealandcoin,38
+hedgecoin,37
+digix dao,36
+syndicate,36
+tittiecoin,35
+verge,33
+safeexchangecoin,33
+lgbtqoin,33
+rise,33
+gbr coin,33
+emerald,31
+bam,31
+darkknightcoin,29
+genstake,28
+aegis,27
+wings dao,25
+scryptcoin,18
+coolcoin,16
+spaincoin,16
+returnbit,15
+bitquark,14
+xaucoin,13
+monero,11
+nxt,11
+dogecoin,11
+zcash,11
+startcoin,11
+megastake,11
+fibre,10
+tekcoin,10
+ark,10
+quotient,9
+bitshares,8
+camcoin,8
+solarfarm,7
 cryptographic anomaly,7
 tdfb,7
-free game zone,7
-digibyte,6
-vidiocoin,6
-startcoin,6
-cryptospots,6
-dogecoin,5
-halcyon,5
-camcoin,5
-pakcoin,5
-trumpcoin,5
+eurocoin,7
+cryptofocus,6
+ardor,6
+aircoin,6
+free game zone,6
 evilcoin,5
-iconomi,5
-pencoin,5
+spacecoin,5
+karbo,5
+zcoin,5
+premium,5
+guccionecoin,5
+cannabis industry coin,5
 peercoin,4
-prospercoin,4
 mooncoin,4
-bitgem,4
-feathercoin,4
-noblecoin,4
+halcyon,4
 namecoin,4
-potcoin,4
-titcoin,4
+stablecoin,4
 007 coin,4
-qoracoin,4
-neoscoin,4
-ghoul coin,4
-neucoin,4
-lyrabar,4
-yocoin,4
-vaperscoin,4
-primechain,4
-genesyscoin,4
-premium,4
-bosoncoin,4
-kurrent,4
-cannabis industry coin,4
-boostcoin,3
-quarkcoin,3
-nyancoin,3
-synccoin,3
-teslacoin,3
-torcoin,3
-unbreakablecoin,3
-primecoin,3
-nem,3
-maidsafe coin,3
-monacoin,3
-sonic screw driver coin,3
-truckcoin,3
-nxtty,3
-hypercoin,3
-vtorrent,3
-icash,3
-cryptofocus,3
-emercoin,3
-blitzcoin,3
-i0coin,3
-bitcrystals,3
-phalanx,3
-oldsafecoin,3
-mayacoin,3
-europecoin,3
-dragonsphere,3
-mediumproject,3
-chronoscoin,3
+hodlcoin,4
+trumpcoin,4
+mojocoin,4
+steem backed dollars,4
+pencoin,4
+cloakcoin,3
+einsteinium,3
+feathercoin,3
+goldcoin,3
+luckycoin,3
+novacoin,3
+potcoin,3
+silkcoin,3
+stellar,3
+vertcoin,3
+chip,3
+ghoul coin,3
+pakcoin,3
+adzcoin,3
+sibcoin,3
+digital bullion gold,3
 goldblocks,3
-sentaro,3
-ardor,3
-tennet,3
-goldmaxcoin,3
-guccionecoin,3
-darcrus,3
-zcashdarkcoin,3
-zcrypt,3
-spacecash,3
-npccoin,3
-procom,3
-blackstar,3
-mmxvi,3
-incoin,3
-gameunits,3
-bitcoindark,2
-geocoin,2
-bluecoin,2
-blackcoin,2
-sexcoin,2
-energycoin,2
+covencoin,3
+blockpay,3
+olympcoin,3
+janus,3
+digibyte,2
+kobocoin,2
+petrodollar,2
+quatloo,2
 riecoin,2
+bitbar,2
 bytecoin,2
-clams,2
-craftcoin,2
-einsteinium,2
-fastcoin,2
-globalcoin,2
-hobonickels,2
-hyperstake,2
-ixcoin,2
+cannabiscoin,2
 mintcoin,2
-mincoin,2
 navcoin,2
-novacoin,2
+nyancoin,2
+protoshares,2
 paycoin,2
-saturn2coin,2
-syscoin,2
-umbrella,2
-vootcoin,2
+spots,2
+synccoin,2
+unbreakablecoin,2
+vidiocoin,2
 vericoin,2
-whitecoin,2
-xcash,2
-burstcoin,2
-solarfarm,2
-giga hash,2
-faircoin,2
+crypti,2
+nem,2
+positron,2
+kryptcoin,2
 rubycoin,2
-ghostcoin,2
-ufo coin,2
-slimcoin,2
-conspiracy coin ,2
-octocoin,2
-eagscoin,2
-empyrean,2
+aerome,2
+dirac coin,2
+bitstarcoin,2
+metalcoin,2
+world trade funds,2
+bananabits,2
 arbit coin,2
-sprouts,2
-global currency reserve,2
-amsterdam coin,2
-mindcoin,2
-karmacoin,2
-creditbit ,2
-augur,2
-edrcoin,2
-dashcoin,2
+uncoin,2
+obits coin,2
+i0coin,2
+okcash,2
+lisk,2
 gamebetcoin,2
+sarcoin,2
 billarycoin,2
-darknet,2
-sunshotcoin,2
-think and get rich coin,2
-hempcoin,2
-debitcoin,2
-moincoin,2
+bitalphacoin,2
+networkcoin,2
+salus,2
+steps,2
+europecoin,2
+berncash,2
 pepe,2
-colossuscoinxt,2
-belacoin,2
-digieuro,2
-lemoncoin,2
-stresscoin,2
-dark lisk,2
-digital bullion gold,2
+acescoin,2
 orlycoin,2
-cobracoin,2
-lbry credits,2
-bitmoon,2
-autumncoin,2
-bitcloud,2
-zeta2coin,2
-tellurion,2
-veltor,2
-fonziecoin,2
-pesobit,2
-bighancoin,2
+bancor network token,2
+bitsend,2
+iconomi,2
+mass coin,2
+save the ocean,2
 dogegorecoin,2
-resumeo shares,2
-zcoin,2
-happycreatorcoin ,2
-zurcoin,2
-2bacco coin,2
+tetra,2
+braincoin,2
+goldmaxcoin,2
 ebitz,2
-iwallet,2
-eurocoin,2
-incent,2
-canada ecoin,2
-digitalcash,1
-paycoin,1
-petrodollar,1
+bitcoinfast,2
+blackstar,2
+cryptospots,2
+cryptocarbon,2
+mmxvi,2
+pentacoin,2
+bitcoindark,1
 spreadcoin,1
+acoin,1
 argentum,1
 aricoin,1
-myriadcoin,1
-zetacoin,1
+betacoin,1
+bitbean,1
+blackcoin,1
+energycoin,1
 bitmark,1
 cachecoin,1
-cannabiscoin,1
+cashcoin,1
+catcoin,1
 cannacoin,1
-cloakcoin,1
-cryptcoin,1
-casinocoin,1
-earthcoin,1
-elacoin,1
-fibre,1
+clams,1
+emark,1
+fireflycoin,1
 fluttercoin,1
-franko,1
-grandcoin,1
-gameleaguecoin,1
-luckycoin,1
+globalcoin,1
+hobonickels,1
+ixcoin,1
 maxcoin,1
+mincoin,1
 mazacoin,1
-netcoin,1
-orbitcoin,1
 phoenixcoin,1
-ripoffcoin,1
-rotocoin,1
-sterlingcoin,1
+saturn2coin,1
 supercoin,1
 tigercoin,1
-terracoin,1
-vertcoin,1
-crypti,1
-libertycoin,1
+unitarystatus dollar,1
 xxxcoin,1
-ziftrcoin,1
-elektron,1
-nubits,1
-positron,1
-neutron,1
+digitalnote ,1
+maidsafe coin,1
+monacoin,1
 vcash,1
-gulden,1
+faircoin,1
+qoracoin,1
 dnotes,1
-aerome,1
-daytrader coin,1
-dirac coin,1
 solarcoin,1
-social media coin,1
-bitstarcoin,1
+nxtty,1
+slimcoin,1
 trustplus,1
-fantomcoin ,1
-bitcoinplus,1
-viral coin,1
+conspiracy coin ,1
+octocoin,1
+xcoin,1
+radonpay,1
 edgecoin,1
-droidz,1
-uncoin,1
-obits coin,1
-evergreencoin,1
-dogecoindark,1
-waves,1
+darktron,1
+bitseeds,1
+credits,1
+global currency reserve,1
+neucoin,1
+lyrabar,1
+blitzcoin,1
+karmacoin,1
+nas2coin,1
+augur,1
 hitcoin,1
 gamecredits,1
+dashcoin,1
 dubaicoin,1
-prismchain,1
+redcrowcoin,1
+pwr coin,1
+bitcrystals,1
 dotcoin,1
-scotcoin,1
-influxcoin,1
-networkcoin,1
-adzcoin,1
+darknet,1
+phalanx,1
+hempcoin,1
 gapcoin,1
-invisiblecoin,1
-salus,1
 soilcoin,1
-sibcoin,1
-advancedinternetblock,1
+vaperscoin,1
 1337,1
-anti bitcoin,1
-404coin,1
-mojocoin,1
+breakoutcoin,1
+digieuro,1
+dark lisk,1
 nevacoin,1
-starcoin,1
+ratecoin,1
 revenu,1
 clockcoin,1
-bancor network token,1
-destiny,1
+zoomcoin,1
+sharkcoin,1
 project decorum,1
+genesyscoin,1
 let it ride,1
-specie,1
-steem backed dollars,1
+mmnxt ,1
 cryptojacks,1
 ibankcoin,1
-stratis,1
-frankywillcoin,1
 mudracoin,1
-exabyte (exb),1
-mass coin,1
-e-dinar coin,1
-save the ocean,1
-sense,1
+autumncoin,1
 arkdao,1
-karbo,1
-bittokens,1
-808,1
 dickcoin,1
-darkgold,1
-gaycoin,1
-samsara coin,1
 ubiqoin,1
-faucetcoin,1
-dollarcoin,1
+erbcoin,1
+sentaro,1
 bitbronze,1
 beats,1
-unfed coin,1
 bitluckcoin,1
-atomic coin,1
-antilitecoin,1
-fujicoin,1
+resumeo shares,1
 sydpakcoin,1
-crabcoin,1
-moneta,1
-braincoin,1
+safecoin,1
+blackshadowcoin,1
 royalcoin,1
-nubiscoin,1
+tennet,1
 equalcoin,1
 royalcoin 2.0,1
-luckyblocks,1
+darcrus,1
 cbd crystals,1
-golem network token,1
-xencoin,1
-cosmic,1
-firstcoin,1
-xenixcoin,1
-jio token,1
-janus,1
-bitcoinfast,1
+dream8coin,1
+embercoin,1
+iwallet,1
+trickycoin,1
 seedshares,1
+procom,1
 coralpay,1
-moneycoin,1
-poolstamp,1
-loco,1
+incent,1
 avatar coin,1
-gakhcoin,1
+gameunits,1
 quebecoin,1
+giftnet,1

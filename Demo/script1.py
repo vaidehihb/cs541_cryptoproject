@@ -1,29 +1,35 @@
 from flask import Flask, request, render_template, Response
 from dbConnect import getDomains
-from flask_bootstrap import Bootstrap
 from similarity import readPopularity
 import json
 from wtforms import TextField, Form
 
 # crypto flask app
 app = Flask(__name__)
-Bootstrap(app)
-
-
-class SearchForm(Form):
-    autocomp = TextField('Enter Currency name', id='currency_autocomplete')
-
 
 # home page
 @app.route('/')
 def index():
     return render_template("home.html")
 
+# currency table
+@app.route('/currencylist')
+def currency_table():
+    return render_template("currency_table.html")
 
 # currency details
 @app.route('/currency/<c_name>')
 def currency_dashboard(c_name):
-    return render_template("c_dashboard.html", c_name=c_name)
+    params = {}
+    params['rating'] = 7.5
+    params['popularity'] = 90
+    params['dominance'] = 40
+    params['skewness'] = 60
+    params['kurtosis'] = 70
+    params['sd'] = 4
+    params['pricedata'] = []
+    params['trusted'] = True
+    return render_template("c_dashboard.html", c_name=c_name, params = params)
 
 
 # currency domains
