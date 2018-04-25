@@ -3,6 +3,8 @@ from dbConnect import getDomains
 from similarity import readPopularity
 import json
 from wtforms import TextField, Form
+from getDataForFrontEnd import getDatabyCurrency
+
 
 # crypto flask app
 app = Flask(__name__)
@@ -20,15 +22,7 @@ def currency_table():
 # currency details
 @app.route('/currency/<c_name>')
 def currency_dashboard(c_name):
-    params = {}
-    params['rating'] = 7.5
-    params['popularity'] = 90
-    params['dominance'] = 40
-    params['skewness'] = 60
-    params['kurtosis'] = 70
-    params['sd'] = 4
-    params['pricedata'] = []
-    params['trusted'] = True
+    params = getDatabyCurrency(c_name)
     return render_template("c_dashboard.html", c_name=c_name, params = params)
 
 
@@ -36,7 +30,7 @@ def currency_dashboard(c_name):
 @app.route('/currency/<c_name>/domains')
 def currency_domains(c_name):
     domains = getDomains(c_name)
-    return render_template("c_domains.html", domains=domains[0:10], c_name=c_name)
+    return render_template("c_domains.html", domains=domains, c_name=c_name)
 
 
 # word cloud data
@@ -44,7 +38,7 @@ def currency_domains(c_name):
 def word_cloud():
     try:
         popular = readPopularity()
-        words_json = [{'text': str(word[0]).capitalize(), 'weight': int(word[1])} for word in popular]
+        words_json = [{'text': str(word[0]).capitalize(), 'weight': int(word[1]), 'link':'/currency/'+str(word[0]).lower()} for word in popular]
         return json.dumps(words_json)
     except:
         return json.dumps({})
