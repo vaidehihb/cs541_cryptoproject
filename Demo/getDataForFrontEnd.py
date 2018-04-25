@@ -1,6 +1,5 @@
 import pandas
 
-
 def getDatabyCurrency(currency=None):
     try:
         data = pandas.read_csv('Demo/csvFiles/currency_data.csv')
