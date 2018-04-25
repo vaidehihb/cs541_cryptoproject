@@ -1,9 +1,7 @@
-from dbConnect import getCurrencyNames, getContent
-from similarity import getCurrencyPopularity
+from dbConnect import getCurrencyNames
+from similarity import getCurrencyPopularity, readPopularity
 
-print 'getting the list of currencies...'
+print 'running getCurrencyNames...'
 getCurrencyNames()
-print 'getting the content...'
-getContent()
-print 'getting the currency popularity...'
+print 'running getCurrencyPopularity...'
 getCurrencyPopularity()

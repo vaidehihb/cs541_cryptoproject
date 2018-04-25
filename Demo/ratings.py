@@ -2,8 +2,8 @@ from scipy import stats
 import numpy as np
 from scipy.stats import kurtosis, skew
 from getAPIData import CryptoCompareData, CoinMarketCapData
-import csv
-import time
+import pandas
+import matplotlib.pyplot as plt
 
 
 def getSlope(volume):
@@ -12,60 +12,140 @@ def getSlope(volume):
     return slope, intercept
 
 
-start = time.time()
+def getRating(popularity, std_dev, avg, kutosis, skewness):
+    rating = 0
+    rating += popularity * 10
+    std_dev = std_dev / avg * 100 * 2
+    if std_dev > 68.3:
+        extra = ((std_dev - 68.3) / 68.3) * 100
+        rating += extra
+    else:
+        rating += 100
+    if kutosis > 0 and kutosis <= 1:
+        rating += (1 - kutosis) * 100
+    elif kutosis > 1:
+        rating += 0
+    else:
+        rating += 100
+    if skewness < 0:
+        rating += 0
+    elif skewness > 1:
+        rating += 100
+    else:
+        rating += skewness * 100
+    rating = (rating / 400) * 10
+    return rating
 
-a = CryptoCompareData()
-a.getCoinList()
-
-currency_data = a.coinlist.head(n=500)
-currency_data = currency_data[['CoinName', 'FullName', 'Id', 'Name', 'SortOrder', 'Symbol']]
-
-# print currency_data
-
-temp_name_list = currency_data['CoinName'].tolist()
-temp_symbol_list = currency_data['Symbol'].tolist()
 
 volume_slope_column = []
 volume_intercept_column = []
+average = []
 standard_deviation = []
+ratio = []
 kurtosis_measure = []
 skewness = []
 rating = []
+currency_prices = []
+currency_volumes = []
+market_capital = []
+capital_dominance = []
+rating = []
+popularity = []
+currency_articles = []
 
-print "Calculating measures..."
+a = CryptoCompareData()
+a.getCoinList()
+currency_data = a.coinlist.head(n=1000)
+currency_data = currency_data[['SortOrder', 'Symbol', 'Name', 'CoinName', 'Id', 'FullName']]
+temp_name_list = currency_data['CoinName'].tolist()
+temp_symbol_list = currency_data['Symbol'].tolist()
 
-for symbol in temp_symbol_list:
+b = CoinMarketCapData()
+b.getGlobalData()
+total_market_capital = b.globaldata['total_market_cap_usd'].tolist()
+total_market_capital = total_market_capital[0]
+b.getData()
+currency_marketcapital = b.data
+
+popularity_data = pandas.read_csv('Demo/csvFiles/popularity_list.csv')
+popularity_name_list = popularity_data['Currency'].tolist()
+total_articles = pandas.read_csv('Demo/csvFiles/content_total.csv')
+total_articles = total_articles.loc[(total_articles['Content'] == 'Content')]
+total_articles = list(total_articles['Total'])
+total_articles = total_articles[0]
+
+inaccessible_symbols = []
+
+for index, symbol in enumerate(temp_symbol_list):
     try:
         closing_data = a.getDataByDays(currency=symbol)
-        average_prices = closing_data['close'].tolist()
+        prices = closing_data['close'].tolist()
         volumes = closing_data['volumefrom'].tolist()
 
         vol_slope, vol_intercept = getSlope(volumes)
-        std_dev = np.std(average_prices)
-        kurto = kurtosis(average_prices)
-        ske = skew(average_prices)
+        avg = np.mean(prices)
+        std_dev = np.std(prices)
+        kurto = kurtosis(prices)
+        ske = skew(prices)
 
-        # rating =
+        try:
+            # symbol_marketcapital = b.getDataForCurrency(id=str(temp_name_list[index]).lower())
+            symbol_marketcapital = currency_marketcapital.loc[(currency_marketcapital['symbol'] == str(symbol))]
+            symbol_marketcapital = list(symbol_marketcapital['market_cap_usd'])
+            symbol_marketcapital = symbol_marketcapital[0]
+        except:
+            symbol_marketcapital = 0
+        market_c = float(symbol_marketcapital) / float(total_market_capital) * 100
+
+        currency = temp_name_list[index].lower()
+        if currency in popularity_name_list:
+            pop = popularity_data.loc[(popularity_data['Currency'] == str(currency))]
+            pop = list(pop['Popularity'])
+            pop = pop[0]
+        else:
+            pop = 0
+        percent_pop = (pop / float(total_articles)) * 100
+
+        currency_rating = getRating(percent_pop, std_dev, avg, kurto, ske)
 
         volume_slope_column.append(vol_slope)
         volume_intercept_column.append(vol_intercept)
+        average.append(avg)
         standard_deviation.append(std_dev)
+        ratio.append(std_dev / avg * 100 * 2)
         kurtosis_measure.append(kurto)
         skewness.append(ske)
+        currency_prices.append(prices)
+        currency_volumes.append(volumes)
+        market_capital.append(symbol_marketcapital)
+        capital_dominance.append(market_c)
+        currency_articles.append(pop)
+        popularity.append(percent_pop)
+        rating.append(currency_rating)
 
     except:
         print "Couldn't get data for: " + symbol
-        for index, row in currency_data.iterrows():
-            if row['Symbol'] == symbol:
-                currency_data.drop(index, inplace=True)
+        inaccessible_symbols.append(symbol)
         continue
 
+for symbol in inaccessible_symbols:
+    for index, row in currency_data.iterrows():
+        if row['Symbol'] == symbol:
+            currency_data.drop(index, inplace=True)
+
+currency_data['marketCapital'] = market_capital
+currency_data['currencyDominance'] = capital_dominance
+currency_data['newsArticles'] = currency_articles
+currency_data['percentPopularity'] = popularity
 currency_data['volumeSlope'] = volume_slope_column
 currency_data['volumeIntercept'] = volume_intercept_column
+currency_data['average'] = average
 currency_data['stdDeviation'] = standard_deviation
+currency_data['spreadAboutMean'] = ratio
 currency_data['kurtosis'] = kurtosis_measure
 currency_data['skewness'] = skewness
+currency_data['rating'] = rating
+currency_data['90dayClosingPrices'] = currency_prices
+currency_data['90dayVolumes'] = currency_volumes
 
-print currency_data
-
-print time.time() - start
+currency_data.to_csv('Demo/csvFiles/currency_data.csv')
