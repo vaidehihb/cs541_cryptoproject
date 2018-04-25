@@ -9,9 +9,9 @@ $(document).ready(function () {
        $('#word_cloud').jQCloud(words_data, {
            autoResize:true,
            height:600,
-//           afterCloudRender:function(){
-//                window.location.replace("/list");
-//           }
+           afterCloudRender:function(){
+                window.location.replace("/currencylist");
+           }
        });
    }});
 });
