@@ -8,7 +8,7 @@
             <div class="{{key}}" data-{{key}}="{{val}}"></div>
         {% endfor %}
     </div>
-    <h1>Know what's new with {{c_name}}</h1>
+    <h1>Know what's new with {{c_name.capitalize()}}</h1>
             <div class="container">
                 <div class="row">
                     <div id="ratingdiv" class="col chartswrap" data-rating="{{params['rating']}}" style="min-width: 310px; max-width: 400px; height: 300px; margin: 0 auto"></div>
@@ -22,7 +22,7 @@
                     <span class="badge badge-success">Trusted</span>
                 {% endif %}
                 {% if params['trusted'] == 1 %}
-                    <span class="badge badge-warning">Moderately safe</span>
+                    <span class="badge badge-warning">Quite safe</span>
                 {% endif %}
                 {% if params['trusted'] == 0 %}
                     <span class="badge badge-danger">Risky</span>

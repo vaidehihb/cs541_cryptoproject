@@ -21,11 +21,11 @@ def getDatabyCurrency(currency=None):
         volumes = list(data['90dayVolumes'])[0]
         # domains = getDomains(currency)
 
-        if rating > 5:
+        if rating > 5.7:
             trusted = 2
-        if rating > 3 and rating <= 5:
+        if rating > 3.5 and rating <= 5.7:
             trusted = 1
-        if rating <= 3:
+        if rating <= 3.5:
             trusted = 0
 
 

@@ -85,4 +85,4 @@ def readPopularity():
         for index, row in enumerate(reader):
             if index != 0:
                 popularity_list.append(row)
-    return popularity_list
+    return popularity_list[2:]

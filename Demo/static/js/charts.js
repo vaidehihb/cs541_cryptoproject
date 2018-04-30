@@ -77,16 +77,16 @@ $(document).ready(function () {
             text: ''
         },
         plotBands: [{
-            from: 5,
+            from: 5.7,
             to: 10,
             color: '#55BF3B' // green
         }, {
-            from: 3,
-            to: 5,
+            from: 3.5,
+            to: 5.7,
             color: '#DDDF0D' // yellow
         }, {
             from: 0,
-            to: 3,
+            to: 3.5,
             color: '#DF5353' // red
         }]
     },
