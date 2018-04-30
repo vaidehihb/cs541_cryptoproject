@@ -61,7 +61,7 @@
         <entry file="file://$PROJECT_DIR$/Demo/getDataForFrontEnd.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="440">
-              <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+              <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -72,8 +72,8 @@
       <file leaf-file-name="c_dashboard.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Demo/templates/c_dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+            <state relative-caret-position="395">
+              <caret line="20" column="37" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="37" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -348,6 +348,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15100671" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -610,7 +611,7 @@
     <entry file="file://$PROJECT_DIR$/Demo/getDataForFrontEnd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
-          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -619,8 +620,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Demo/templates/c_dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+        <state relative-caret-position="395">
+          <caret line="20" column="37" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="37" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
           </folding>
