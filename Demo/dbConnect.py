@@ -13,6 +13,7 @@ def getCurrencyNames():
     currencies = list(currencies['CoinName'].apply(str))
     with open('Demo/csvFiles/list.csv', 'wb') as csv_file:
         writer = csv.writer(csv_file)
+        writer.writerow(['Currency'])
         for c in currencies:
             c = tuple([c])
             writer.writerow(c)
@@ -35,8 +36,9 @@ def readCurrencies():
     currencies = []
     with open('Demo/csvFiles/list.csv', 'rb') as csv_file:
         reader = csv.reader(csv_file)
-        for row in reader:
-            currencies.append(row)
+        for index, row in enumerate(reader):
+            if index != 0:
+                currencies.append(row)
     return currencies
 
 

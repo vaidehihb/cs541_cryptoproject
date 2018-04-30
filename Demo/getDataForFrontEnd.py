@@ -1,9 +1,11 @@
 import pandas
 
+
 def getDatabyCurrency(currency=None):
     try:
         data = pandas.read_csv('Demo/csvFiles/currency_data.csv')
         data = data.loc[(data['CoinName'] == currency.capitalize())]
+
         marketcap = list(data['marketCapital'])[0]
         dominance = list(data['currencyDominance'])[0]
         articles = list(data['newsArticles'])[0]
