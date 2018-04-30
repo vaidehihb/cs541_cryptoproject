@@ -1,6 +1,10 @@
 $(document).ready(function () {
 
+    $('.charts-carousel').carousel({
+      interval:false
+    })
 
+    if($('.datavalues').length > 0){
 
     Highcharts.chart('ratingdiv', {
 
@@ -52,7 +56,7 @@ $(document).ready(function () {
     // the value axis
     yAxis: {
         min: 0,
-        max: 5,
+        max: 10,
 
         minorTickInterval: 'auto',
         minorTickWidth: 1,
@@ -73,47 +77,310 @@ $(document).ready(function () {
             text: ''
         },
         plotBands: [{
-            from: 3.5,
-            to: 5,
+            from: 5,
+            to: 10,
             color: '#55BF3B' // green
         }, {
-            from: 2,
-            to: 3.5,
+            from: 3,
+            to: 5,
             color: '#DDDF0D' // yellow
         }, {
             from: 0,
-            to: 2,
+            to: 3,
             color: '#DF5353' // red
         }]
     },
 
     series: [{
         name: 'Rating',
-        data: [3.5],
+        data: [$('.datavalues .rating').data()['rating']],
         tooltip: {
             valueSuffix: ''
         }
     }]
 
 },
-// Add some life
-/* function (chart) {
-    if (!chart.renderer.forExport) {
-        setInterval(function () {
-            var point = chart.series[0].points[0],
-                newVal,
-                inc = Math.round((Math.random() - 0.5) * 20);
+);
 
-            newVal = point.y + inc;
-            if (newVal < 0 || newVal > 200) {
-                newVal = point.y - inc;
+Highcharts.chart('skewness-chart', {
+    chart: {
+        type: 'bar'
+    },
+    title: {
+        text: ''
+    },
+    subtitle: {
+        text: ''
+    },
+    xAxis: {
+        categories: ['Skewness'],
+        title: {
+            text: null
+        }
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: '',
+            align: 'high'
+        },
+        labels: {
+            overflow: 'justify'
+        }
+    },
+    tooltip: {
+        valueSuffix: ''
+    },
+    plotOptions: {
+        bar: {
+            dataLabels: {
+                enabled: true
             }
+        }
+    },
+//    legend: {
+//        layout: 'vertical',
+//        align: 'right',
+//        verticalAlign: 'top',
+//        x: -40,
+//        y: 80,
+//        floating: true,
+//        borderWidth: 1,
+//        backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+//        shadow: true
+//    },
+    credits: {
+        enabled: false
+    },
+    series: [{
+        name: 'Skewness',
+        data: [$('.datavalues .skewness').data()['skewness']]
+    }]
+});
 
-            point.update(newVal);
+Highcharts.chart('kurtosis-chart', {
+    chart: {
+        type: 'bar'
+    },
+    title: {
+        text: ''
+    },
+    subtitle: {
+        text: ''
+    },
+    xAxis: {
+        categories: ['kurtosis'],
+        title: {
+            text: null
+        }
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: '',
+            align: 'high'
+        },
+        labels: {
+            overflow: 'justify'
+        }
+    },
+    tooltip: {
+        valueSuffix: ''
+    },
+    plotOptions: {
+        bar: {
+            dataLabels: {
+                enabled: true
+            }
+        }
+    },
+//    legend: {
+//        layout: 'vertical',
+//        align: 'right',
+//        verticalAlign: 'top',
+//        x: -40,
+//        y: 80,
+//        floating: true,
+//        borderWidth: 1,
+//        backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+//        shadow: true
+//    },
+    credits: {
+        enabled: false
+    },
+    series: [{
+        name: 'Kurtosis',
+        data: [$('.datavalues .kurtosis').data()['kurtosis']]
+    }]
+});
 
-        }, 3000);
+Highcharts.chart('sd-chart', {
+    chart: {
+        type: 'bar'
+    },
+    title: {
+        text: ''
+    },
+    subtitle: {
+        text: ''
+    },
+    xAxis: {
+        categories: ['Standard Deviation'],
+        title: {
+            text: null
+        }
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: '',
+            align: 'high'
+        },
+        labels: {
+            overflow: 'justify'
+        }
+    },
+    tooltip: {
+        valueSuffix: ''
+    },
+    plotOptions: {
+        bar: {
+            dataLabels: {
+                enabled: true
+            }
+        }
+    },
+//    legend: {
+//        layout: 'vertical',
+//        align: 'right',
+//        verticalAlign: 'top',
+//        x: -40,
+//        y: 80,
+//        floating: true,
+//        borderWidth: 1,
+//        backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+//        shadow: true
+//    },
+    credits: {
+        enabled: false
+    },
+    series: [{
+        name: 'Standard Deviation',
+        data: [$('.datavalues .std_dev').data()['std_dev']]
+    }]
+});
 
-}*/);
+Highcharts.chart('spread-chart', {
+    chart: {
+        type: 'bar'
+    },
+    title: {
+        text: ''
+    },
+    subtitle: {
+        text: ''
+    },
+    xAxis: {
+        categories: ['Data Spread'],
+        title: {
+            text: null
+        }
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: '',
+            align: 'high'
+        },
+        labels: {
+            overflow: 'justify'
+        }
+    },
+    tooltip: {
+        valueSuffix: ''
+    },
+    plotOptions: {
+        bar: {
+            dataLabels: {
+                enabled: true
+            }
+        }
+    },
+//    legend: {
+//        layout: 'vertical',
+//        align: 'right',
+//        verticalAlign: 'top',
+//        x: -40,
+//        y: 80,
+//        floating: true,
+//        borderWidth: 1,
+//        backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+//        shadow: true
+//    },
+    credits: {
+        enabled: false
+    },
+    series: [{
+        name: 'Data Spread',
+        data: [$('.datavalues .spread').data()['spread']]
+    }]
+});
+
+Highcharts.chart('marketcap-chart', {
+    chart: {
+        type: 'bar'
+    },
+    title: {
+        text: ''
+    },
+    subtitle: {
+        text: ''
+    },
+    xAxis: {
+        categories: ['Market capital'],
+        title: {
+            text: null
+        }
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: '',
+            align: 'high'
+        },
+        labels: {
+            overflow: 'justify'
+        }
+    },
+    tooltip: {
+        valueSuffix: 'USD'
+    },
+    plotOptions: {
+        bar: {
+            dataLabels: {
+                enabled: true
+            }
+        }
+    },
+//    legend: {
+//        layout: 'vertical',
+//        align: 'right',
+//        verticalAlign: 'top',
+//        x: -40,
+//        y: 80,
+//        floating: true,
+//        borderWidth: 1,
+//        backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+//        shadow: true
+//    },
+    credits: {
+        enabled: false
+    },
+    series: [{
+        name: 'Market Capital',
+        data: [parseInt($('.datavalues .marketcap').data()['marketcap'])]
+    }]
+});
 
 
 Highcharts.chart('dominancediv', {
@@ -203,31 +470,14 @@ Highcharts.chart('dominancediv', {
 
     series: [{
         name: 'Dominance',
-        data: [37.5],
+        data: [$('.datavalues .dominance').data()['dominance']],
         tooltip: {
             valueSuffix: ''
         }
     }]
 
 },
-// Add some life
-/* function (chart) {
-    if (!chart.renderer.forExport) {
-        setInterval(function () {
-            var point = chart.series[0].points[0],
-                newVal,
-                inc = Math.round((Math.random() - 0.5) * 20);
-
-            newVal = point.y + inc;
-            if (newVal < 0 || newVal > 200) {
-                newVal = point.y - inc;
-            }
-
-            point.update(newVal);
-
-        }, 3000);
-
-}*/);
+);
 
 Highcharts.chart('popularitydiv', {
 
@@ -316,35 +566,306 @@ Highcharts.chart('popularitydiv', {
 
     series: [{
         name: 'Popularity by percentage',
-        data: [90.5],
+        data: [$('.datavalues .popularity').data()['popularity']],
         tooltip: {
             valueSuffix: ''
         }
     }]
 
 },
-// Add some life
-/* function (chart) {
-    if (!chart.renderer.forExport) {
-        setInterval(function () {
-            var point = chart.series[0].points[0],
-                newVal,
-                inc = Math.round((Math.random() - 0.5) * 20);
+);
 
-            newVal = point.y + inc;
-            if (newVal < 0 || newVal > 200) {
-                newVal = point.y - inc;
+}
+
+
+    $('.charts-carousel').on('slide.bs.carousel', function (event) {
+      if(event.to == 0){
+
+if($('.datavalues').length > 0){
+Highcharts.chart('skewness-chart', {
+    chart: {
+        type: 'bar'
+    },
+    title: {
+        text: ''
+    },
+    subtitle: {
+        text: ''
+    },
+    xAxis: {
+        categories: ['Skewness'],
+        title: {
+            text: null
+        }
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: '',
+            align: 'high'
+        },
+        labels: {
+            overflow: 'justify'
+        }
+    },
+    tooltip: {
+        valueSuffix: ''
+    },
+    plotOptions: {
+        bar: {
+            dataLabels: {
+                enabled: true
             }
+        }
+    },
+//    legend: {
+//        layout: 'vertical',
+//        align: 'right',
+//        verticalAlign: 'top',
+//        x: -40,
+//        y: 80,
+//        floating: true,
+//        borderWidth: 1,
+//        backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+//        shadow: true
+//    },
+    credits: {
+        enabled: false
+    },
+    series: [{
+        name: 'Skewness',
+        data: [$('.datavalues .skewness').data()['skewness']]
+    }]
+});
 
-            point.update(newVal);
+Highcharts.chart('kurtosis-chart', {
+    chart: {
+        type: 'bar'
+    },
+    title: {
+        text: ''
+    },
+    subtitle: {
+        text: ''
+    },
+    xAxis: {
+        categories: ['kurtosis'],
+        title: {
+            text: null
+        }
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: '',
+            align: 'high'
+        },
+        labels: {
+            overflow: 'justify'
+        }
+    },
+    tooltip: {
+        valueSuffix: ''
+    },
+    plotOptions: {
+        bar: {
+            dataLabels: {
+                enabled: true
+            }
+        }
+    },
+//    legend: {
+//        layout: 'vertical',
+//        align: 'right',
+//        verticalAlign: 'top',
+//        x: -40,
+//        y: 80,
+//        floating: true,
+//        borderWidth: 1,
+//        backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+//        shadow: true
+//    },
+    credits: {
+        enabled: false
+    },
+    series: [{
+        name: 'Kurtosis',
+        data: [$('.datavalues .kurtosis').data()['kurtosis']]
+    }]
+});
 
-        }, 3000);
+Highcharts.chart('sd-chart', {
+    chart: {
+        type: 'bar'
+    },
+    title: {
+        text: ''
+    },
+    subtitle: {
+        text: ''
+    },
+    xAxis: {
+        categories: ['Standard Deviation'],
+        title: {
+            text: null
+        }
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: '',
+            align: 'high'
+        },
+        labels: {
+            overflow: 'justify'
+        }
+    },
+    tooltip: {
+        valueSuffix: ''
+    },
+    plotOptions: {
+        bar: {
+            dataLabels: {
+                enabled: true
+            }
+        }
+    },
+//    legend: {
+//        layout: 'vertical',
+//        align: 'right',
+//        verticalAlign: 'top',
+//        x: -40,
+//        y: 80,
+//        floating: true,
+//        borderWidth: 1,
+//        backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+//        shadow: true
+//    },
+    credits: {
+        enabled: false
+    },
+    series: [{
+        name: 'Standard Deviation',
+        data: [$('.datavalues .std_dev').data()['std_dev']]
+    }]
+});
 
-}*/);
+Highcharts.chart('spread-chart', {
+    chart: {
+        type: 'bar'
+    },
+    title: {
+        text: ''
+    },
+    subtitle: {
+        text: ''
+    },
+    xAxis: {
+        categories: ['Data Spread'],
+        title: {
+            text: null
+        }
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: '',
+            align: 'high'
+        },
+        labels: {
+            overflow: 'justify'
+        }
+    },
+    tooltip: {
+        valueSuffix: ''
+    },
+    plotOptions: {
+        bar: {
+            dataLabels: {
+                enabled: true
+            }
+        }
+    },
+//    legend: {
+//        layout: 'vertical',
+//        align: 'right',
+//        verticalAlign: 'top',
+//        x: -40,
+//        y: 80,
+//        floating: true,
+//        borderWidth: 1,
+//        backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+//        shadow: true
+//    },
+    credits: {
+        enabled: false
+    },
+    series: [{
+        name: 'Data Spread',
+        data: [$('.datavalues .spread').data()['spread']]
+    }]
+});
 
-data = [3.5, 3, 3.2, 3.1, 3.6, 3.9, 3.4, 3.4, 2.9, 3.1, 3.7, 3.4, 3, 3, 4, 4.4, 3.9, 3.5, 3.8, 3.8, 3.4, 3.7, 3.6, 3.3, 3.4, 3, 3.4, 3.5, 3.4, 3.2, 3.1, 3.4, 4.1, 4.2, 3.1, 3.2, 3.5, 3.6, 3, 3.4, 3.5, 2.3, 3.2, 3.5, 3.8, 3, 3.8, 3.2, 3.7, 3.3, 3.2, 3.2, 3.1, 2.3, 2.8, 2.8, 3.3, 2.4, 2.9, 2.7, 2, 3, 2.2, 2.9, 2.9, 3.1, 3, 2.7, 2.2, 2.5, 3.2, 2.8, 2.5, 2.8, 2.9, 3, 2.8, 3, 2.9, 2.6, 2.4, 2.4, 2.7, 2.7, 3, 3.4, 3.1, 2.3, 3, 2.5, 2.6, 3, 2.6, 2.3, 2.7, 3, 2.9, 2.9, 2.5, 2.8, 3.3, 2.7, 3, 2.9, 3, 3, 2.5, 2.9, 2.5, 3.6, 3.2, 2.7, 3, 2.5, 2.8, 3.2, 3, 3.8, 2.6, 2.2, 3.2, 2.8, 2.8, 2.7, 3.3, 3.2, 2.8, 3, 2.8, 3, 2.8, 3.8, 2.8, 2.8, 2.6, 3, 3.4, 3.1, 3, 3.1, 3.1, 3.1, 2.7, 3.2, 3.3, 3, 2.5, 3, 3.4, 3];
-
-Highcharts.chart('statsdiv', {
+Highcharts.chart('marketcap-chart', {
+    chart: {
+        type: 'bar'
+    },
+    title: {
+        text: ''
+    },
+    subtitle: {
+        text: ''
+    },
+    xAxis: {
+        categories: ['Market capital'],
+        title: {
+            text: null
+        }
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: '',
+            align: 'high'
+        },
+        labels: {
+            overflow: 'justify'
+        }
+    },
+    tooltip: {
+        valueSuffix: 'USD'
+    },
+    plotOptions: {
+        bar: {
+            dataLabels: {
+                enabled: true
+            }
+        }
+    },
+//    legend: {
+//        layout: 'vertical',
+//        align: 'right',
+//        verticalAlign: 'top',
+//        x: -40,
+//        y: 80,
+//        floating: true,
+//        borderWidth: 1,
+//        backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+//        shadow: true
+//    },
+    credits: {
+        enabled: false
+    },
+    series: [{
+        name: 'Market Capital',
+        data: [parseInt($('.datavalues .marketcap').data()['marketcap'])]
+    }]
+});
+      }
+      }
+      if(event.to == 1){
+      if($('.datavalues').length > 0){
+        Highcharts.chart('statsdiv', {
     title: {
         text: 'Closing Price Histogram'
     },
@@ -374,14 +895,17 @@ Highcharts.chart('statsdiv', {
     }, {
         name: 'Data',
         type: 'scatter',
-        data: data,
+        data: $('.datavalues .prices').data()['prices'],
         id: 's1',
         marker: {
             radius: 1.5
         }
     }]
 });
+}
 
+      }
+    });
 
 
 });
